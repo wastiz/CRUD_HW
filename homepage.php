@@ -1,12 +1,12 @@
 <h2 class="text-center">Avaleht - Sirvi kogu tabelit</h2>
 <?php
-// Lisame siia leheküljendamise
-include 'paginate.php';
-// sql lause, päring ja if lause
-$sql = 'SELECT * FROM simple ORDER BY added DESC LIMIT '.$start.', '.$maxPerPage;
-$res = $database->dbGetArray($sql);
-if($res !== FALSE) {
-    //$database->show($res);
+    // Lisame siia leheküljendamise
+    include 'paginate.php';
+    // sql lause, päring ja if lause
+    $sql = 'SELECT * FROM simple ORDER BY added DESC LIMIT '.$start.', '.$maxPerPage;
+    $res = $database->dbGetArray($sql);
+    if($res !== FALSE) {
+        //$database->show($res);
 
 ?>
 

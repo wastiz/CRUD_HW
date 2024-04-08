@@ -40,7 +40,7 @@ $start = $nextStart - $maxPerPage;
                 <span aria-hidden="true">&lsaquo;</span>
             </a>
         </li>
-        <?php 
+        <?php
         // for-loop algus
             for($x =0; $x < $pageCount; $x++) {
             ?>
