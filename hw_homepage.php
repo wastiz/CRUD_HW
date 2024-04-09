@@ -32,12 +32,12 @@ if($res !== FALSE) {
         $added = $dateTime->format('d.m.Y H:i:s');
         ?>
         <tr>
-            <td><?php echo $start + $key; ?></td>
-            <td><?php echo $val['name']; ?></td>
+            <td class='text-center'><?php echo $start + $key; ?></td>
+            <td class="text-center"><?php echo $val['name']; ?></td>
             <td class="text-center"><?php echo $birth; ?></td>
-            <td class="text-end"><?php echo $val['salary']; ?></td>
-            <td class="text-end"><?php echo $val['height']; ?></td>
-            <td class="text-end"><?php echo $added; ?></td>
+            <td class="text-center"><?php echo $val['salary']; ?></td>
+            <td class="text-center"><?php echo $val['height']; ?></td>
+            <td class="text-center"><?php echo $added; ?></td>
             <td class='text-center'>
                 <a href="<?php echo $_SERVER['PHP_SELF']; ?>?page=hw_update-by-id&ids=<?php echo $val['id']; ?>"><i class="fa-solid fa-pen-to-square text-warning" title="Edit"></i></a>
                 <a href="?page=hw_delete&ids=<?php echo $val['id']; ?>" onclick="if (confirm('Kas oled kindel?')) { return true; } else { return false; }">
